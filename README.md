@@ -10,7 +10,10 @@ Exploring Bikeshare Data
 Describe what your project is about and what it does
 
 ### Files used
-Include the files used
+Files used include CSVs of bikeshare data from three cities: New York, Chicago, and Washington DC.
+chicago.csv
+new-york-city.csv
+washington.csv
 
 ### Credits
 Original repository can be found at https://github.com/udacity/pdsnd_github
