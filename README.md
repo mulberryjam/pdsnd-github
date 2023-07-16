@@ -7,7 +7,7 @@ First created on 20230715.
 Exploring Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This project explores trends present in sets of bicycle-sharing data for three cities in the United States: New York, Chicago, and Washington DC.
 
 ### Files used
 Files used include CSVs of bikeshare data from three cities: New York, Chicago, and Washington DC.
