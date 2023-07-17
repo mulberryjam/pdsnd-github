@@ -5,7 +5,7 @@ head(chi)
 
 starting.time = (format(as.POSIXct(chi$Start.Time), format = "%H"))
 
-ggplot(aes(x = as.numeric(format(as.POSIXct(Start.Time), format = "%H"))), data = chi) + geom_histogram(binwidth=0.5) + scale_x_continuous(breaks = 0:23) + scale_y_continuous(breaks = seq(0, 40000, 5000)) + fill = I('lightblue') + ggtitle('Bike-Share Rides Initiated Per Hour in the City of Chicago') + labs(x = 'Hour of Day', y = 'Number of Rides Initiated') + facet_wrap(~as.numeric(format(as.POSIXct(chi$Start.Time), format = "%Y")))
+ggplot(aes(x = as.numeric(format(as.POSIXct(Start.Time), format = "%H"))), data = chi) + geom_histogram(binwidth=0.5, fill = "lightblue") + scale_x_continuous(breaks = 0:23) + scale_y_continuous(breaks = seq(0, 40000, 5000)) + ggtitle('Bike-Share Rides Initiated Per Hour in the City of Chicago') + labs(x = 'Hour of Day', y = 'Number of Rides Initiated') + facet_wrap(~as.numeric(format(as.POSIXct(chi$Start.Time), format = "%Y")))
 hour.count = table(starting.time)
 rides.initiated = array(data = hour.count)
 hour.of.day = 0:23
